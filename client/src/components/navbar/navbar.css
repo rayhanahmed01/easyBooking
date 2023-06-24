@@ -1,0 +1,63 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.navbar{
+    height: 70px;
+    background-color: #34495E;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.navContainer{
+    width: 100%;
+    max-width: 1024px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-weight: 500;
+    font-family: Monospace;
+    font-size: 40px;
+    
+}
+
+.logo h3 {
+	
+    font: normal 36px 'Cookie', cursive;
+}
+.logo h3 span{
+    color:  #e0ac1c;
+}
+.navButton{
+    margin-left: 20px;
+    padding: 7px 11px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-weight: 700;
+}
+.navButton:hover{
+    color: white;
+    background-color: aquamarine;
+}
+.logout{
+    margin-left: -680px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+.navItems{
+
+    margin-right: -800px;
+}

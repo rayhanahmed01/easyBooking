@@ -1,0 +1,234 @@
+.header {
+    
+    background-image: url(https://images.pexels.com/photos/1179156/pexels-photo-1179156.jpeg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: 69%;
+   
+
+
+
+    }
+
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+    overflow: hidden;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+    
+}
+.headerList {
+    display: flex;
+    gap: 40px;
+    
+   
+
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+        
+    
+   
+
+}
+
+.headerListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.headerDesc{
+    margin: 20px 0px;
+}
+
+.headerBtn{
+    background-color: #0071c2;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: whitesmoke;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+
+}
+.headerIcon{
+    color: silver;
+}
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    
+}
+
+.headerSearchText{
+    color: lightslategray;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 6px;
+}
+
+.options{
+    position:absolute;
+    top: 50px;
+    background: white;
+    color: gray ;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 2;
+}
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+
+}
+
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(19, 19, 67);
+    color: #0071c2;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
+
+.headerBtn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* box-shadow: 0 9px #999; */
+    width: 60px;
+}
+.headerBtn:hover{
+    background-color: #3e8e41;
+    
+}
+.headerBtn:active{
+    background-color: #999;
+    box-shadow: 0 5px #666;
+    transform:  translateY(4px);
+}
+
+.headerBtn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.headerBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.headerBtn:active {
+    color: #000
+}
+
+.headerBtn:active:after {
+    background: transparent;
+}
+
+.headerBtn:hover:before {
+    opacity: 1;
+}
+
+.headerBtn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+@keyframes headerBtn {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
